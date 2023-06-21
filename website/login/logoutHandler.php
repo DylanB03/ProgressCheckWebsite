@@ -6,7 +6,7 @@ session_start();
 
 
 // unset variables
-unset($_SESSION['personID']['personname']['email']['passcode']);
+unset($_SESSION['personID']['personname']['email']['passcode']['classID']['classCode']['taskID']);
 
 
 // destroy session

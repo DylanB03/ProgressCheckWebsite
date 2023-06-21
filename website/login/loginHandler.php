@@ -21,7 +21,7 @@ WHERE email= '".$_POST['email']."'";
 
 $result = mysqli_query($conn, $u);
 
-// if password + email are right or exist
+// if password + email are right or exist, if right create session variables
 
 if(mysqli_num_rows($result)>0){
     $row = mysqli_fetch_assoc($result);

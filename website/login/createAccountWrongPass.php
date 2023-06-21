@@ -59,7 +59,7 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
 </div>
 
 <center>
-<b style = "color: red">Please Make Sure The Passwords Match</b>
+<b style = "color: red">The passwords may not have matched, or the email is already being used</b>
 </center>
 
 
