@@ -39,9 +39,6 @@ CREATE TABLE submitted(
     PRIMARY KEY(submitID)
 )
 
--- INSERT INTO loginInfo (personName,email,passcode)
--- VALUES ('Dylan', 'dbutz1@ocdsb.ca', 'monkeys');
-
 CREATE TABLE enrolled(
     ID int NOT NULL AUTO_INCREMENT,
     classID int,
@@ -50,3 +47,6 @@ CREATE TABLE enrolled(
     PRIMARY KEY(ID),
     UNIQUE(ID)
     )   
+    
+-- INSERT INTO loginInfo (personName,email,passcode)
+-- VALUES ('Dylan', 'dbutz1@ocdsb.ca', 'monkeys');
