@@ -15,13 +15,13 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
     <!-- default make stuff -->
     <meta charset = "utf-8">
     <title>Progress Check Website</title>
-    <link rel ="stylesheet" href="/projectroot/api/css/styles.css/">
+    <link rel ="stylesheet" href="/api/css/styles.css/">
 </head> 
 
 <body>
     <div class="nav-bar" style="font-size: 30px">
             
-      <img src="/projectroot/api/img/logo.png/" 
+      <img src="/api/img/logo.png/" 
         width = "100"
         height = "100"
         alt = "logo"  
@@ -30,7 +30,7 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
         
         <div class ="stuff">
            <!-- nav bar, hyper links to other pages. color and text decoration removes the default blue underline for hlinks  -->
-            <a href="home.php"style="color: black; text-decoration:none">Home</a>
+            <a href="/api/index.php"style="color: black; text-decoration:none">Home</a>
             <?php if($loggedIn) : ?>
             <a href="class/dashboard.php"style="color: black; text-decoration:none"id="dash">Dashboard</a> <?php endif;?>
             <?php if($loggedIn==false):?>
