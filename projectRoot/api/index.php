@@ -15,18 +15,18 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
     <!-- default make stuff -->
     <meta charset = "utf-8">
     <title>Progress Check Website</title>
-    <link rel ="stylesheet" href="projectroot/api/css/styles.css"/>
+    <link rel ="stylesheet" href="projectroot/api/css/styles.css">
 </head> 
 
 <body>
     <div class="nav-bar" style="font-size: 30px">
             
-      <img src="/api/img/logo.png" 
+      <img src="projectroot/api/img/logo.png" 
         width = "100"
         height = "100"
         alt = "logo"  
         id="logo"
-        style="border-right: 3px solid black"/>
+        style="border-right: 3px solid black">
         
         <div class ="stuff">
            <!-- nav bar, hyper links to other pages. color and text decoration removes the default blue underline for hlinks  -->
