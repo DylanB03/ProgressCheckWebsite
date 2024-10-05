@@ -15,13 +15,13 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
     <!-- default make stuff -->
     <meta charset = "utf-8">
     <title>Progress Check Website</title>
-    <link rel ="stylesheet" href="css/styles.css"/>
+    <link rel ="stylesheet" href="/api/css/styles.css"/>
 </head> 
 
 <body>
     <div class="nav-bar" style="font-size: 30px">
             
-      <img src="img/logo.png" 
+      <img src="/api/img/logo.png" 
         width = "100"
         height = "100"
         alt = "logo"  
