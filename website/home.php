@@ -9,6 +9,14 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
 }
 // check if logged in to change nav bar
 ?>
+# Install it globally
+npm i -g vercel
+
+# Log in
+vercel login
+
+# Let's fly
+vercel
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
