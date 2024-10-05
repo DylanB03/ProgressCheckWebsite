@@ -1,5 +1,5 @@
 <?php
-
+phpinfo();
 session_start();
 
 if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION['userEmail'])){
