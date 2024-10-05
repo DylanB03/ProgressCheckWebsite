@@ -15,7 +15,7 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
     <!-- default make stuff -->
     <meta charset = "utf-8">
     <title>Progress Check Website</title>
-    <link rel ="stylesheet" href="/api/css/styles.css"/>
+    <link rel ="stylesheet" href="projectroot/api/css/styles.css"/>
 </head> 
 
 <body>
