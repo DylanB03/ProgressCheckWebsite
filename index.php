@@ -12,7 +12,7 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
 $servername = "progresschecker-server.mysql.database.azure.com";
 $username= "ywitupqynh";
 $password = "accessProgress123!";
-$dbname = "loginDB";
+$dbname = "logindb";
 
 
 $conn=mysqli_init();
