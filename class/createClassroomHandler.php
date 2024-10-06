@@ -4,14 +4,14 @@ session_start();
 ini_set("memory_limit","16M");
 // if appropriate session variables arent set, send the user back to the home page
 if(!isset($_SESSION['userID'])){
-    header("Location:../home.php");
+    header("Location:../index.php");
     die();
   }
 
 // connect to server
-$servername = "127.0.0.1";
-$username= "root";
-$password = "";
+$servername = "progresschecker-server.mysql.database.azure.com";
+$username= "ywitupqynh";
+$password = "accessProgress123!";
 $dbname = "loginDB";
 
 $conn = new mysqli($servername,$username,$password,$dbname);

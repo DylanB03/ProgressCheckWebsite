@@ -6,11 +6,10 @@ session_start();
 
 
 // same as create account   
-$servername = "127.0.0.1";
-$username= "root";
-$password = "";
+$servername = "progresschecker-server.mysql.database.azure.com";
+$username= "ywitupqynh";
+$password = "accessProgress123!";
 $dbname = "loginDB";
-
 $conn = new mysqli($servername,$username,$password,$dbname);
 
 

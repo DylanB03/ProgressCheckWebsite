@@ -1,9 +1,9 @@
 <!-- connect to databse, all default + no password-->
 
 <?php
-$servername = "127.0.0.1";
-$username= "root";
-$password = "";
+$servername = "progresschecker-server.mysql.database.azure.com";
+$username= "ywitupqynh";
+$password = "accessProgress123!";
 $dbname = "loginDB";
 
 // connect databse through mysql

@@ -3,13 +3,13 @@
 session_start();
 // if appropriate session variables arent set, send the user back to the home page
 if(!isset($_SESSION['userID']) || !isset($_SESSION['classID']) || !isset($_SESSION['className']) || !isset($_SESSION['classCode'])){
-    header("Location:../home.php");
+    header("Location:../index.php");
     die();
   }
-$servername = "127.0.0.1";
-$username= "root";
-$password = "";
-$dbname = "loginDB";
+  $servername = "progresschecker-server.mysql.database.azure.com";
+  $username= "ywitupqynh";
+  $password = "accessProgress123!";
+  $dbname = "loginDB";
 $conn = new mysqli($servername,$username,$password,$dbname);
 
 unset($_SESSION['taskID']);

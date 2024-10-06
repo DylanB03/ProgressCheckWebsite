@@ -3,7 +3,7 @@
 session_start();
 // if appropriate session variables arent set, send the user back to the home page
 if(!isset($_SESSION['userID']) || !isset($_SESSION['classID']) || !isset($_SESSION['className']) || !isset($_SESSION['classCode'])){
-  header("Location:../home.php");
+  header("Location:../index.php");
   die();
 }
 $studentID=$_SESSION['userID'];
@@ -35,7 +35,7 @@ $classCode=$_SESSION['classCode'];
         
         <div class ="stuff">
            <!-- nav bar, hyper links to other pages. color and text decoration removes the default blue underline for hlinks  -->
-            <a href="../home.php"style="color: black; text-decoration:none">Home</a>
+            <a href="../index.php"style="color: black; text-decoration:none">Home</a>
             <a href="../class/dashboard.php"style="color: black; text-decoration:none" id="dash">Dashboard</a>
             <a href="../login/logoutPage.php"style="color: black; text-decoration:none"id="lO">Log Out</a>
         </div>

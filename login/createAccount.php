@@ -29,7 +29,7 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
               
               <div class ="stuff">
                  <!-- nav bar, hyper links to other pages. color and text decoration removes the default blue underline for hlinks  -->
-                  <a href="../home.php"style="color: black; text-decoration:none">Home</a>
+                  <a href="../index.php"style="color: black; text-decoration:none">Home</a>
                   <?php if($loggedIn) : ?>
                   <a href="../class/dashboard.php"style="color: black; text-decoration:none">Dashboard</a><?php endif;?>
                   <?php if($loggedIn==false):?>
