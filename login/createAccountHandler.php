@@ -30,7 +30,7 @@ $txtpass2 = $_POST['passcode2'];
 
 // check if passcode1 == passcode2
 if($txtpass != $txtpass2){
-    $conn->close();
+    mysqli_close($conn);
     header("Location: ../login/createAccountWrongPass.php");
     die();
 }
@@ -46,12 +46,12 @@ $result2=mysqli_query($conn,$sql2);
 
 if(mysqli_num_rows($result2)==0){
 $result=mysqli_query($conn,$sql);
-$conn->close();
+mysqli_close($conn);
 header("Location:../login/createSuccessful.php");
 die();
 }
 else{
-    $conn->close();
+    mysqli_close($conn);
     header("Location: ../login/createAccountWrongPass.php");
     die();  
 }

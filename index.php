@@ -9,22 +9,22 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
   $loggedIn=false;
 }
 
-$servername = "progresschecker-server.mysql.database.azure.com";
-$username= "ywitupqynh";
-$password = "accessProgress123!";
-$dbname = "logindb";
+// $servername = "progresschecker-server.mysql.database.azure.com";
+// $username= "ywitupqynh";
+// $password = "accessProgress123!";
+// $dbname = "logindb";
 
 
-$conn=mysqli_init();
-if(!$conn) {
-    die("mysqli_init failure");
-}
-mysqli_ssl_set($conn,NULL,NULL,"C:\Users\dylan\Downloads\DigiCertGlobalRootG2.crt.pem",NULL,NULL);
-mysqli_real_connect($conn,$servername,$username,$password,$dbname,3306,MYSQLI_CLIENT_SSL);
-if(mysqli_connect_errno()){
-    $conn->close();
-    die('Failed to connect to MySQL: '.mysqli_connect_error());
-}
+// $conn=mysqli_init();
+// if(!$conn) {
+//     die("mysqli_init failure");
+// }
+// mysqli_ssl_set($conn,NULL,NULL,"C:\Users\dylan\Downloads\DigiCertGlobalRootG2.crt.pem",NULL,NULL);
+// mysqli_real_connect($conn,$servername,$username,$password,$dbname,3306,MYSQLI_CLIENT_SSL);
+// if(mysqli_connect_errno()){
+//     $conn->close();
+//     die('Failed to connect to MySQL: '.mysqli_connect_error());
+// }
 ?>
 
 <!DOCTYPE html>
