@@ -6,7 +6,7 @@ $username= "ywitupqynh";
 $password = "accessProgress123!";
 $dbname = "loginDB";
 
-
+/*
 $conn=mysqli_init();
 if(!$conn) {
     die("mysqli_init failure");
@@ -16,10 +16,10 @@ mysqli_real_connect($conn,$servername,$username,$password,$dbname,3306,MYSQLI_CL
 if(mysqli_connect_errno()){
     $conn->close();
     die('Failed to connect to MySQL: '.mysqli_connect_error());
-}
+}*/
 // connect databse through mysql
 
-//$conn = new mysqli($servername,$username,$password,$dbname);
+$conn = new mysqli($servername,$username,$password,$dbname);
 
 // get variables from the createAccount form
 
