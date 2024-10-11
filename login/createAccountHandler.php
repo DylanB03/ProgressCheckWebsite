@@ -1,10 +1,13 @@
 <!-- connect to databse, all default + no password-->
 
 <?php
+echo "setting variables";
 $servername = "progresschecker-server.mysql.database.azure.com";
 $username= "ywitupqynh";
 $password = "accessProgress123!";
 $dbname = "loginDB";
+echo "variables set";
+
 
 /*
 $conn=mysqli_init();
@@ -19,7 +22,9 @@ if(mysqli_connect_errno()){
 }*/
 // connect databse through mysql
 
+echo "trying connection";
 $conn = new mysqli($servername,$username,$password,$dbname);
+echo "connection made";
 
 // get variables from the createAccount form
 
