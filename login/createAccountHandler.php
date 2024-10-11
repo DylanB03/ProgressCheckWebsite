@@ -18,9 +18,8 @@ if(!$conn) {
 echo "line 2";
 mysqli_ssl_set($conn,NULL,NULL,"C:\Users\dylan\Downloads\DigiCertGlobalRootG2.crt.pem",NULL,NULL);
 echo "line 3";
-mysqli_real_connect($conn,$servername,$username,$password,$dbname,3306,MYSQLI_CLIENT_SSL);
-echo "line 4";
-if(mysqli_connect_errno()){
+mysqli_real_connect($conn,$servername,$username,$password,$dbname,3306, MYSQLI_CLIENT_SSL);
+if(mysqli_connect_errno($conn)){
     $conn->close();
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
