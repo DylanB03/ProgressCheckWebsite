@@ -9,22 +9,25 @@ $dbname = "loginDB";
 echo "variables set";
 
 
-/*
+echo "connect";
 $conn=mysqli_init();
+echo "line 1";
 if(!$conn) {
     die("mysqli_init failure");
 }
+echo "line 2";
 mysqli_ssl_set($conn,NULL,NULL,"C:\Users\dylan\Downloads\DigiCertGlobalRootG2.crt.pem",NULL,NULL);
+echo "line 3";
 mysqli_real_connect($conn,$servername,$username,$password,$dbname,3306,MYSQLI_CLIENT_SSL);
+echo "line 4";
 if(mysqli_connect_errno()){
     $conn->close();
     die('Failed to connect to MySQL: '.mysqli_connect_error());
-}*/
+}
+echo "line 5";
 // connect databse through mysql
 
-echo "trying connection";
-$conn = new mysqli($servername,$username,$password,$dbname);
-echo "connection made";
+//$conn = new mysqli($servername,$username,$password,$dbname);    
 
 // get variables from the createAccount form
 
