@@ -46,7 +46,7 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
 
 <div class = "enterInfo">
 <!-- collect user input, create form class to connect to the login handler -->
-    <form class = "loginInput" action="../login/createAccountHandler.php" id = "createForm" method ="post">
+    <form class = "loginInput" action="createAccountHandler.php" id = "createForm" method ="post">
 
         <input class = "text-field" type="text" id ="personname" name = "personname" placeholder="Name" required>
         <input class = "text-field" type="text" id = "email" name="email" placeholder="Email" required>
