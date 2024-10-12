@@ -16,7 +16,7 @@ if(!$conn) {
     die("mysqli_init failure");
 }
 echo "line 2";
-mysqli_ssl_set($conn,NULL,NULL,"C:\Users\dylan\Downloads\DigiCertGlobalRootCA.crt.pem",NULL,NULL);
+mysqli_ssl_set($conn,NULL,NULL,"../var/DigiCertGlobalRootCA.crt.pem",NULL,NULL);
 echo "line 3";
 mysqli_real_connect($conn,$servername,$username,$password,$dbname,3306, MYSQLI_CLIENT_SSL);
 if(mysqli_connect_errno()){
