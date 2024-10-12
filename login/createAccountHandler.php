@@ -5,7 +5,7 @@ echo "setting variables";
 $servername = "progresschecker-server.mysql.database.azure.com";
 $username= "ywitupqynh";
 $password = "accessProgress123!";
-$dbname = "loginDB";
+$dbname = "logindb";
 echo "variables set";
 
 
