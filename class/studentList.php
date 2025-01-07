@@ -6,9 +6,9 @@ if(!isset($_SESSION['userID']) || !isset($_SESSION['classID']) || !isset($_SESSI
     header("Location:../index.php");
     die();
   }
-  $servername = "progresschecker-server.mysql.database.azure.com";
-  $username= "ywitupqynh";
-  $password = "accessProgress123!";
+  $servername = "165.227.46.101";
+  $username= "user1";
+  $password = "access";
   $dbname = "loginDB";
 $conn = new mysqli($servername,$username,$password,$dbname);
 

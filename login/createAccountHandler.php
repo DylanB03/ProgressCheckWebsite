@@ -2,31 +2,32 @@
 
 <?php
 echo "setting variables";
-$servername = "progresschecker-server.mysql.database.azure.com";
-$username= "ywitupqynh";
-$password = "accessProgress123!";
-$dbname = "logindb";
+$servername = "165.227.46.101";
+$username= "user1";
+$password = "access";
+$dbname = "loginDB";
 echo "variables set";
 
+//code for microsoft azure
+// echo "connect";
+// $conn=mysqli_init();
+// echo "line 1";
+// if(!$conn) {
+//     die("mysqli_init failure");
+// }
+// echo "line 2";
+// mysqli_ssl_set($conn,NULL,NULL,"../var/DigiCertGlobalRootCA.crt.pem",NULL,NULL);
+// echo "line 3";
+// mysqli_real_connect($conn,$servername,$username,$password,$dbname,3306, MYSQLI_CLIENT_SSL);
+// if(mysqli_connect_errno()){
+//     $conn->close();
+//     die('Failed to connect to MySQL: '.mysqli_connect_error());
+// }
+// echo "line 5";
 
-echo "connect";
-$conn=mysqli_init();
-echo "line 1";
-if(!$conn) {
-    die("mysqli_init failure");
-}
-echo "line 2";
-mysqli_ssl_set($conn,NULL,NULL,"../var/DigiCertGlobalRootCA.crt.pem",NULL,NULL);
-echo "line 3";
-mysqli_real_connect($conn,$servername,$username,$password,$dbname,3306, MYSQLI_CLIENT_SSL);
-if(mysqli_connect_errno()){
-    $conn->close();
-    die('Failed to connect to MySQL: '.mysqli_connect_error());
-}
-echo "line 5";
 // connect databse through mysql
 
-//$conn = new mysqli($servername,$username,$password,$dbname);    
+$conn = new mysqli($servername,$username,$password,$dbname);    
 
 // get variables from the createAccount form
 

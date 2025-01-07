@@ -9,9 +9,9 @@ if(!isset($_SESSION['userID'])){
   }
 
 // connect to server
-$servername = "progresschecker-server.mysql.database.azure.com";
-$username= "ywitupqynh";
-$password = "accessProgress123!";
+$servername = "165.227.46.101";
+$username= "user1";
+$password = "access";
 $dbname = "loginDB";
 
 $conn = new mysqli($servername,$username,$password,$dbname);

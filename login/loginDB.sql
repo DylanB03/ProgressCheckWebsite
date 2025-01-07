@@ -1,6 +1,6 @@
 CREATE DATABASE loginDB;
 
-CREATE TABLE loginInfo(
+CREATE TABLE loginDB.loginInfo(
     personID int NOT NULL AUTO_INCREMENT,
     personname VARCHAR(255),
     email VARCHAR(255),
@@ -8,9 +8,9 @@ CREATE TABLE loginInfo(
 
     PRIMARY KEY(personID),
     UNIQUE(email)
-)
+);
 
-CREATE TABLE classrooms(
+CREATE TABLE loginDB.classrooms(
     classID int NOT NULL AUTO_INCREMENT,
     classCode VARCHAR(255),
     adminID VARCHAR(255),
@@ -18,18 +18,18 @@ CREATE TABLE classrooms(
 
     PRIMARY KEY(classID),
     UNIQUE(classCode)
-)
+);
 
-CREATE TABLE tasks(
+CREATE TABLE loginDB.tasks(
     taskID int NOT NULL AUTO_INCREMENT,
     classID VARCHAR(255),
     taskName VARCHAR(255),
     taskDescription TEXT(65535),
 
     PRIMARY KEY(taskID)
-)
+);
 
-CREATE TABLE submitted(
+CREATE TABLE loginDB.submitted(
     submitID int NOT NULL AUTO_INCREMENT,
     studentID VARCHAR(255),
     taskID VARCHAR(255),
@@ -37,16 +37,16 @@ CREATE TABLE submitted(
     comment VARCHAR(255),
 
     PRIMARY KEY(submitID)
-)
+);
 
-CREATE TABLE enrolled(
+CREATE TABLE loginDB.enrolled(
     ID int NOT NULL AUTO_INCREMENT,
     classID int,
     studentID int,
     
     PRIMARY KEY(ID),
     UNIQUE(ID)
-    )   
+    );   
     
 -- INSERT INTO loginInfo (personName,email,passcode)
 -- VALUES ('Dylan', 'dbutz1@ocdsb.ca', 'monkeys');
