@@ -32,7 +32,7 @@ echo "variables set";
 //digital ocean pdo object format
 
 try{
-$conn = new PDO("mysqli:host=localhost;dbname=$dbname",$username,$password);
+$conn = new PDO("mysql:host=$servername;dbname=$dbname",$username,$password);
 } catch (PDOException $e){
     die("Failed to connect to database: ". $e->getMessage());
 }
