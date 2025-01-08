@@ -95,6 +95,8 @@ try{
 $u = "SELECT classID FROM enrolled
 WHERE studentID='".$_SESSION['userID']."'";
 
+echo "$_SESSION[userID]";
+
 //$result = mysqli_query($conn,$u);
 $result = $conn->query($u);
 //$result = mysqli_fetch_all($result);
