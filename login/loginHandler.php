@@ -36,7 +36,8 @@ echo "query result";
 if($result->rowCount()>0){
   //  $row = mysqli_fetch_assoc($result);
   echo "row exists ";
- if( $row= $conn->query($result)->fetch(PDO::FETCH_ASSOC)){
+$result2= $conn->query($result);
+$row=$result2->fetch(PDO::FETCH_ASSOC);
   echo "row fetched";
 
     if($row['email'] == $_POST['email'] && $row['passcode'] == $_POST['passcode']){
@@ -55,7 +56,6 @@ if($result->rowCount()>0){
 else{
     $_SESSION["error"] = 'Incorrect email and/or password';
     header("Location: ../login/notsuccessful.php");
-}
 }
 //$conn->close();
 $conn=null;
