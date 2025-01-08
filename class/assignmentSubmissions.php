@@ -74,9 +74,10 @@ $result=$result->fetchAll(PDO::FETCH_ASSOC);
 $result2=[];
 
 // get all data related to the submission
-foreach($result as $submitID){
+foreach($result as $row){
+    $submitID=$row['submitID'];
     $a="SELECT studentID, color, comment FROM submitted 
-    WHERE submitID='".$submitID[0]."'";
+    WHERE submitID='".$submitID."'";
     //$tmp=mysqli_fetch_assoc(mysqli_query($conn,$a));
     $sql2=$conn->query($a);
     $tmp=$sql2->fetch(PDO::FETCH_ASSOC);
