@@ -82,7 +82,7 @@ foreach($result as $row){
     $step=$conn->query($a);
     $tmp=$step->fetch(PDO::FETCH_ASSOC);
     array_push($result2,$tmp);
-
+  echo "i made it here";
     if($tmp){
     echo "tmp is ".print_r($tmp,true);
     }else{
