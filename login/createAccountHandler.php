@@ -45,6 +45,10 @@ $txtemail  =$_POST['email'];
 $txtpass = $_POST['passcode'];
 $txtpass2 = $_POST['passcode2'];
 
+
+error_log("Password 1 = ", $txtpass);
+error_log("Password 2 = ", $txtpass2);
+
 // check if passcode1 == passcode2
 if($txtpass != $txtpass2){
     //mysqli_close($conn);
@@ -66,6 +70,8 @@ WHERE email='".$_POST['email']."'";
 //$result2=mysqli_query($conn,$sql2);
 
 echo "selected";
+error_log("number 2");
+
 //if(mysqli_num_rows($result2)==0){
 if($conn->query($sql2) == 0){
 //$result=mysqli_query($conn,$sql);
@@ -75,8 +81,7 @@ echo "queried";
 $conn=null;
 header("Location:../login/createSuccessful.php");
 die();
-}
-else{
+}else{
    // mysqli_close($conn);
    $conn=null;
     header("Location: ../login/createAccountWrongPass.php");
