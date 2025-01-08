@@ -46,7 +46,7 @@ $txtpass = $_POST['passcode'];
 $txtpass2 = $_POST['passcode2'];
 
 // check if passcode1 == passcode2
-if($txtpass !== $txtpass2){
+if($txtpass != $txtpass2){
     //mysqli_close($conn);
     $conn = null;
     header("Location: ../login/createAccountWrongPass.php");
