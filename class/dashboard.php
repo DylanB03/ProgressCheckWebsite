@@ -100,7 +100,7 @@ $result = $conn->query($u);
 //$result = mysqli_fetch_all($result);
 $result=$result->fetchAll(PDO::FETCH_ASSOC);
 $result2 = [];
-
+/*
 // get the className, ID, and code from each classID where enrolled
 foreach ($result as $classID){
   $a = "SELECT className,classID,classCode FROM classrooms
@@ -110,7 +110,15 @@ $sql2=$conn->query($a);
 $tmp=$sql2->fetch(PDO::FETCH_ASSOC);
   array_push($result2,$tmp);
 }
-
+*/
+foreach($result as $row){
+  $classID=$row['classID'];
+  $a = "SELECT className,classID,classCode FROM classrooms
+  WHERE classID='".$classID[0]."'";
+  $sql2=$conn->query($a);
+  $tmp=$sql2->fetch(PDO::FETCH_ASSOC);
+  array_push($result2,$tmp);
+}
 ?>
 
 <!-- create a box for each class enrolled, and put the name, id, and code as data to be transferred when the box is clicked -->
@@ -121,9 +129,9 @@ $tmp=$sql2->fetch(PDO::FETCH_ASSOC);
     $name = $class['className'];
     $classNum = $class['classID'];
     $classCode=$class['classCode'];
-    echo "$name";
+    /*echo "$name";
     echo "$classNum";
-    echo "$classCode";
+    echo "$classCode";*/
 ?>
 <button onclick="location.href='../class/classPageRedirectButton.php?className=<?php echo $name?>&classID=<?php echo $classNum?>&classCode=<?php echo$classCode?>';"
 id="classListButton"
