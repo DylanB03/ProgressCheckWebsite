@@ -95,8 +95,6 @@ try{
 $u = "SELECT classID FROM enrolled
 WHERE studentID='".$_SESSION['userID']."'";
 
-echo "$_SESSION[userID]";
-
 //$result = mysqli_query($conn,$u);
 $result = $conn->query($u);
 //$result = mysqli_fetch_all($result);
@@ -115,6 +113,7 @@ $tmp=$sql2->fetch(PDO::FETCH_ASSOC);
 */
 foreach($result as $row){
   $classID=$row['classID'];
+  echo "$classID[0]";
   $a = "SELECT className,classID,classCode FROM classrooms
   WHERE classID='".$classID[0]."'";
   $sql2=$conn->query($a);
