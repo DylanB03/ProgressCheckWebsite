@@ -113,7 +113,7 @@ $tmp=$sql2->fetch(PDO::FETCH_ASSOC);
 */
 foreach($result as $row){
   $classID=$row['classID'];
-  echo "$classID[0]";
+  echo "$classID";
   $a = "SELECT className,classID,classCode FROM classrooms
   WHERE classID='".$classID[0]."'";
   $sql2=$conn->query($a);
