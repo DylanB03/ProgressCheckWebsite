@@ -4,7 +4,7 @@ Dylan Butz
 
 Client: Ms.Lett
 
-OVERVIEW:
+Overview:
 
 This web application is designed for teachers and educators to have the ability to check in on their students, and how they are doing with the course content.
 
@@ -14,7 +14,7 @@ PHP, JavaScript, HTML, CSS, MySQL
 
 LAMP Stack
 
-WALKTHROUGH:
+Walkthrough:
 
 ![image](https://github.com/user-attachments/assets/c080f460-c361-4e52-8813-84c34072c5b6)
 1. Users can create an account, sign in using a previous account, or logout if they are currently signed in using the navigation bar at the top of the page.
