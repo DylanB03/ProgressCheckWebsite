@@ -53,7 +53,8 @@ error_log("Password 2 = ", $txtpass2);
 if($txtpass != $txtpass2){
     //mysqli_close($conn);
     $conn = null;
-    header("Location: ../login/createAccountWrongPass.php");
+   //header("Location: ../login/createAccountWrongPass.php");
+   header("Location: ../index.php");
     die();
 }
 
@@ -82,9 +83,10 @@ $conn=null;
 header("Location:../login/createSuccessful.php");
 die();
 }else{
+    echo "second else";
    // mysqli_close($conn);
    $conn=null;
-    header("Location: ../login/createAccountWrongPass.php");
+    //header("Location: ../login/createAccountWrongPass.php");
     die();  
 }
 
