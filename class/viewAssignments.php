@@ -11,7 +11,12 @@ $servername = "165.227.46.101";
 $username= "user1";
 $password = "access";
 $dbname = "loginDB";
-$conn = new mysqli($servername,$username,$password,$dbname);
+//$conn = new mysqli($servername,$username,$password,$dbname);
+try{
+  $conn = new PDO("mysql:host=localhost;dbname=$dbname",$username,$password);
+  } catch (PDOException $e){
+      die("Failed to connect to database: ". $e->getMessage());
+  }
 
 $studentID=$_SESSION['userID'];
 $classID=$_SESSION['classID'];
@@ -60,13 +65,17 @@ $classCode=$_SESSION['classCode'];
 <!-- get tasks from the class and their data, then display them all in a grid -->
 <?php
 $u="SELECT taskID FROM tasks WHERE classID = '".$classID."'";
-$result=mysqli_query($conn,$u);
-$result=mysqli_fetch_all($result);
+//$result=mysqli_query($conn,$u);
+$result=$conn->query($u);
+//$result=mysqli_fetch_all($result);
+$result=$result->fetchAll(PDO::FETCH_ASSOC);
 $result2=[];
 
 foreach($result as $taskID){
     $a = "SELECT taskName,taskDescription,taskID FROM tasks WHERE taskID='".$taskID[0]."'";
-    $tmp=mysqli_fetch_assoc(mysqli_query($conn,$a));
+    //$tmp=mysqli_fetch_assoc(mysqli_query($conn,$a));
+    $step=$conn->query($a);
+    $tmp=$step->fetch(PDO::FETCH_ASSOC);
     array_push($result2,$tmp);
 }
 ?>

@@ -10,7 +10,12 @@ if(!isset($_SESSION['userID']) || !isset($_SESSION['classID']) || !isset($_SESSI
 $username= "user1";
 $password = "access";
 $dbname = "loginDB";
-$conn = new mysqli($servername,$username,$password,$dbname);
+try{
+    $conn = new PDO("mysql:host=localhost;dbname=$dbname",$username,$password);
+    } catch (PDOException $e){
+        die("Failed to connect to database: ". $e->getMessage());
+    }
+//$conn = new mysqli($servername,$username,$password,$dbname);
 
 $studentID=$_SESSION['userID'];
 $classID=$_SESSION['classID'];
@@ -62,15 +67,19 @@ $taskName=$_GET['name'];
 <!-- get the submission ids where the taskid matches current task -->
 <?php
 $sql="SELECT submitID FROM submitted WHERE taskID='".$taskID."'";
-$result=mysqli_query($conn,$sql);
-$result=mysqli_fetch_all($result);
+//$result=mysqli_query($conn,$sql);
+$result=$conn->query($sql);
+//$result=mysqli_fetch_all($result);
+$result=$result->fetchAll(PDO::FETCH_ASSOC);
 $result2=[];
 
 // get all data related to the submission
 foreach($result as $submitID){
     $a="SELECT studentID, color, comment FROM submitted 
     WHERE submitID='".$submitID[0]."'";
-    $tmp=mysqli_fetch_assoc(mysqli_query($conn,$a));
+    //$tmp=mysqli_fetch_assoc(mysqli_query($conn,$a));
+    $sql2=$conn->query($a);
+    $tmp=$sql2->fetch(PDO::FETCH_ASSOC);
     array_push($result2,$tmp);
 }
 // create table headers
@@ -92,8 +101,10 @@ foreach($result as $submitID){
         $color = $submit['color'];
         $comment=$submit['comment'];
         $sql="SELECT personname,email FROM loginInfo WHERE personID = '".$personID."'";
-        $result=mysqli_query($conn,$sql);
-        $row=mysqli_fetch_assoc($result);
+       // $result=mysqli_query($conn,$sql);
+       $result=$conn->query($sql);
+       // $row=mysqli_fetch_assoc($result);
+       $fow=$result->fetch(PDO::FETCH_ASSOC);
         $personName=$row['personname'];
         $email=$row['email'];
 

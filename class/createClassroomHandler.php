@@ -14,7 +14,12 @@ $username= "user1";
 $password = "access";
 $dbname = "loginDB";
 
-$conn = new mysqli($servername,$username,$password,$dbname);
+//$conn = new mysqli($servername,$username,$password,$dbname);
+try{
+  $conn = new PDO("mysql:host=localhost;dbname=$dbname",$username,$password);
+  } catch (PDOException $e){
+      die("Failed to connect to database: ". $e->getMessage());
+  }
 
 // generate code using the $x possible characters, length 5
 function generateCode($length=5){
@@ -30,7 +35,8 @@ $sql="INSERT INTO classrooms (classCode, adminID, className) VALUES ('$code','$t
 
 
 // if the code generated already exists, it will keep making new ones until its not new
-$result=mysqli_query($conn,$sql);
+//$result=mysqli_query($conn,$sql);
+$result=$conn->query($sql);
 while(!$result){
     $code=generateCode();
     $tmp = $_SESSION['userID'];
@@ -39,16 +45,20 @@ while(!$result){
 
 $classID_query = "SELECT classID FROM classrooms
 WHERE classCode='".$code."'";
-$classID = mysqli_fetch_assoc(mysqli_query($conn,$classID_query));
+//$classID = mysqli_fetch_assoc(mysqli_query($conn,$classID_query));
+$step = $conn->query($classID_query);
+$classID= $step->fetch(PDO::FETCH_ASSOC);
 
 // make the creator of the class enrolled
 $tmp2 = $classID["classID"];
 $enroll = "INSERT INTO enrolled (classID, studentID) VALUES ('$tmp2','$tmp')";
 
-$result2=mysqli_query($conn,$enroll);
+//$result2=mysqli_query($conn,$enroll);
+$result2=$conn->query($enroll);
 
 
-$conn->close();
+//$conn->close();
+$conn=null;
 header("Location:../class/dashboard.php");
 die();
 

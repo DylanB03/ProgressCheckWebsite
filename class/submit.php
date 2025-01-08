@@ -10,7 +10,12 @@ if(!isset($_SESSION['userID']) || !isset($_SESSION['classID']) || !isset($_SESSI
   $username= "user1";
   $password = "access";
   $dbname = "loginDB";
-$conn = new mysqli($servername,$username,$password,$dbname);
+//$conn = new mysqli($servername,$username,$password,$dbname);
+try{
+  $conn = new PDO("mysql:host=localhost;dbname=$dbname",$username,$password);
+  } catch (PDOException $e){
+      die("Failed to connect to database: ". $e->getMessage());
+  }
 
 $studentID=$_SESSION['userID'];
 $classID=$_SESSION['classID'];
@@ -24,26 +29,33 @@ $comment=$_POST['comment'];
 
 // first see if the submission already exists, to either replace it or create a new one
 
-$conn=new mysqli($servername,$username,$password,$dbname);
+//$conn=new mysqli($servername,$username,$password,$dbname);
 
 $sql ="SELECT submitID FROM submitted WHERE taskID='".$taskID."' AND studentID='".$studentID."'";
-$result=mysqli_query($conn,$sql);
+//$result=mysqli_query($conn,$sql);
+$result=$conn->query($sql);
 
-if(mysqli_num_rows($result)>0){
-    $row=mysqli_fetch_assoc($result);
+//if(mysqli_num_rows($result)>0){
+if($result->rowCount()>0){
+    //$row=mysqli_fetch_assoc($result);
+    $row=$result->fetch(PDO::FETCH_ASSOC);
     $tmp=$row['submitID'];
     $sql2="UPDATE submitted SET studentID='".$studentID."', taskID='".$taskID."',color='".$color."',comment='".$comment."'
     WHERE submitID='".$tmp."'";
-    $result2=mysqli_query($conn,$sql2);
-     $conn->close();
+    //$result2=mysqli_query($conn,$sql2);
+    $result2=$conn->query($sql2);
+     //$conn->close();
+     $conn=null;
      header("Location: ../class/studentPage.php");
      die();
 } else{
 
 $sql2="INSERT INTO submitted(studentID,taskID,color,comment)
 VALUES ('$studentID','$taskID','$color','$comment')";
-$result2=mysqli_query($conn,$sql2);
-$conn->close();
+//$result2=mysqli_query($conn,$sql2);
+$result2=$conn->query($sql2);
+//$conn->close();
+$conn=null;
 header("Location:../class/studentPage.php");
 die();
     

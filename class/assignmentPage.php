@@ -10,7 +10,12 @@ $servername = "165.227.46.101";
 $username= "user1";
 $password = "access";
 $dbname = "loginDB";
-$conn = new mysqli($servername,$username,$password,$dbname);
+//$conn = new mysqli($servername,$username,$password,$dbname);
+try{
+  $conn = new PDO("mysql:host=localhost;dbname=$dbname",$username,$password);
+  } catch (PDOException $e){
+      die("Failed to connect to database: ". $e->getMessage());
+  }
 
 unset($_SESSION['taskID']);
 

@@ -10,7 +10,12 @@ if(!isset($_SESSION['userID']) || !isset($_SESSION['classID']) || !isset($_SESSI
   $username= "user1";
   $password = "access";
   $dbname = "loginDB";
-$conn = new mysqli($servername,$username,$password,$dbname);
+//$conn = new mysqli($servername,$username,$password,$dbname);
+try{
+  $conn = new PDO("mysql:host=localhost;dbname=$dbname",$username,$password);
+  } catch (PDOException $e){
+      die("Failed to connect to database: ". $e->getMessage());
+  }
 
 
 ?>
@@ -61,13 +66,17 @@ $classCode=$_SESSION['classCode'];
 // get student id who is in the class, and their name and email
 
 $u = "SELECT studentID FROM enrolled WHERE classID = '".$classID."'";
-$result=mysqli_query($conn,$u);
-$result=mysqli_fetch_all($result);
+//$result=mysqli_query($conn,$u);
+$result=$conn->query($u);
+//$result=mysqli_fetch_all($result);
+$result=$result->fetchAll(PDO::FETCH_ASSOC);
 $result2=[];
 
 foreach($result as $studentID){
     $a = "SELECT personname,email FROM logininfo WHERE personID = '".$studentID[0]."'";
-    $tmp=mysqli_fetch_assoc(mysqli_query($conn,$a));
+    //$tmp=mysqli_fetch_assoc(mysqli_query($conn,$a));
+    $step=$conn->query($a);
+    $tmp=$step->fetch(PDO::FETCH_ASSOC);
     array_push($result2,$tmp);
 }
 

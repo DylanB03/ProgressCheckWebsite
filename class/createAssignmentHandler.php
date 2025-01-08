@@ -10,7 +10,12 @@ if(!isset($_SESSION['userID']) || !isset($_SESSION['classID']) || !isset($_SESSI
   $username= "user1";
   $password = "access";
   $dbname = "loginDB";
-$conn = new mysqli($servername,$username,$password,$dbname);
+//$conn = new mysqli($servername,$username,$password,$dbname);
+try{
+  $conn = new PDO("mysql:host=localhost;dbname=$dbname",$username,$password);
+  } catch (PDOException $e){
+      die("Failed to connect to database: ". $e->getMessage());
+  }
 
 // create variables
 $studentID=$_SESSION['userID'];
@@ -24,9 +29,11 @@ $description=$_POST['description'];
 
 // insert var into database
 $sql="INSERT INTO tasks (classID, taskName, taskDescription) VALUES ('$classID','$taskName','$description')";
-$result=mysqli_query($conn,$sql);
+//$result=mysqli_query($conn,$sql);
+$result=$conn->query($sql);
 
-$conn->close();
+//$conn->close();
+$conn=null;
 header("Location: ../class/adminPage.php");
 die();
 

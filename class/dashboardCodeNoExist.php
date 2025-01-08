@@ -77,25 +77,34 @@ if(!isset($_SESSION['userID'])){
 
 
 // connect to database
-$servername = "progresschecker-server.mysql.database.azure.com";
-$username= "ywitupqynh";
-$password = "accessProgress123!";
+$servername = "165.227.46.101";
+$username= "user1";
+$password = "access";
 $dbname = "loginDB";
 
-$conn = new mysqli($servername,$username,$password,$dbname);
+//$conn = new mysqli($servername,$username,$password,$dbname);
+try{
+  $conn = new PDO("mysql:host=localhost;dbname=$dbname",$username,$password);
+  } catch (PDOException $e){
+      die("Failed to connect to database: ". $e->getMessage());
+  }
 
 // select classrooms where enrolled
 $u = "SELECT classID FROM enrolled
 WHERE studentID='".$_SESSION['userID']."'";
 
-$result = mysqli_query($conn,$u);
-$result = mysqli_fetch_all($result);
+//$result = mysqli_query($conn,$u);
+$result=$conn->query($u);
+//$result = mysqli_fetch_all($result);
+$result=$result->fetchAll(PDO::FETCH_ASSOC);
 $result2 = [];
 
 foreach ($result as $classID){
   $a = "SELECT className,classID,classCode FROM classrooms
   WHERE classID='".$classID[0]."'";
-  $tmp = mysqli_fetch_assoc(mysqli_query($conn,$a));
+ // $tmp = mysqli_fetch_assoc(mysqli_query($conn,$a));
+ $step=$conn->query($a);
+ $tmp=$step->fetch(PDO::FETCH_ASSOC);
 
   array_push($result2,$tmp);
 }
