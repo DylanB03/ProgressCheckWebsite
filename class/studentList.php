@@ -77,7 +77,7 @@ echo "result is : ".print_r($result,true);
 foreach($result as $row){
   $studentID=$row['studentID'];
   echo "current student ID = $studentID";
-    $a = "SELECT personname,email FROM logininfo WHERE personID = '".$studentID."'";
+    $a = "SELECT personname,email FROM loginInfo WHERE personID = '".$studentID."'";
     //$tmp=mysqli_fetch_assoc(mysqli_query($conn,$a));
     echo " step 1";
     $step=$conn->query($a);
