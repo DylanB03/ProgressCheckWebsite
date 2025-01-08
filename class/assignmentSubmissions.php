@@ -105,7 +105,7 @@ foreach($result as $row){
        // $result=mysqli_query($conn,$sql);
        $result=$conn->query($sql);
        // $row=mysqli_fetch_assoc($result);
-       $fow=$result->fetch(PDO::FETCH_ASSOC);
+       $row=$result->fetch(PDO::FETCH_ASSOC);
         $personName=$row['personname'];
         $email=$row['email'];
 
