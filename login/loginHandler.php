@@ -37,6 +37,7 @@ if($result->rowCount()>0){
   //  $row = mysqli_fetch_assoc($result);
   echo "row exists ";
 $result2= $conn->query($result);
+echo "query completed";
 $row=$result2->fetch(PDO::FETCH_ASSOC);
   echo "row fetched";
 
