@@ -72,8 +72,10 @@ $result=$conn->query($u);
 $result=$result->fetchAll(PDO::FETCH_ASSOC);
 $result2=[];
 
-foreach($result as $studentID){
-    $a = "SELECT personname,email FROM logininfo WHERE personID = '".$studentID[0]."'";
+//foreach($result as $studentID){
+foreach($result as $row){
+  $studentID=$row['studentID'];
+    $a = "SELECT personname,email FROM logininfo WHERE personID = '".$studentID."'";
     //$tmp=mysqli_fetch_assoc(mysqli_query($conn,$a));
     $step=$conn->query($a);
     $tmp=$step->fetch(PDO::FETCH_ASSOC);
