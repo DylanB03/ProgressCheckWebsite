@@ -99,13 +99,13 @@ $result=$conn->query($u);
 $result=$result->fetchAll(PDO::FETCH_ASSOC);
 $result2 = [];
 
-foreach ($result as $classID){
+foreach($result as $row){
+  $classID=$row['classID'];
+  //echo "$classID";
   $a = "SELECT className,classID,classCode FROM classrooms
-  WHERE classID='".$classID[0]."'";
- // $tmp = mysqli_fetch_assoc(mysqli_query($conn,$a));
- $step=$conn->query($a);
- $tmp=$step->fetch(PDO::FETCH_ASSOC);
-
+  WHERE classID='".$classID."'";
+  $sql2=$conn->query($a);
+  $tmp=$sql2->fetch(PDO::FETCH_ASSOC);
   array_push($result2,$tmp);
 }
 
