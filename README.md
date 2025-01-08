@@ -26,10 +26,10 @@ Walkthrough:
 3. Signing in requires only the email and password used for account creation
 
 ![image](https://github.com/user-attachments/assets/38170538-bca0-4c61-b274-79ea7f4f34cf)
-4. After signing in, a dashboard option will appear on the navigation bar, and the create account option will dissapear. Users will see their classrooms they have joined (empty if account is brand new), and will have options to create or join a classroom aswell.
+4. After signing in, a dashboard option will appear on the navigation bar, and the create account option will dissapear. Users will see their classrooms they have joined (empty if account is brand new), and will have options to create or join a classroom as well.
 
 ![image](https://github.com/user-attachments/assets/2d40042e-4ca6-45ab-835c-78ea0094166c)
-5. Creating a classroom requires only a classname, which will then autogenerate a unique and permanent join code for other accounts to become students within your class. The creator of the classroom has specific admin priveleges.
+5. Creating a classroom requires only a classname, which will then autogenerate a unique and permanent join code for other accounts to become students within your class. The creator of the classroom has specific admin privileges.
 
 ![image](https://github.com/user-attachments/assets/afdbe142-a4a5-499d-a4c2-b46c0b9f28f7)
 6. Clicking on a classroom box on your dashboard will show this screen if you are the administrator. The code is the join code others will use to join your classroom.
