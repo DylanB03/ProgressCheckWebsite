@@ -79,8 +79,11 @@ foreach($result as $row){
   echo "current student ID = $studentID";
     $a = "SELECT personname,email FROM logininfo WHERE personID = '".$studentID."'";
     //$tmp=mysqli_fetch_assoc(mysqli_query($conn,$a));
+    echo " step 1";
     $step=$conn->query($a);
+    echo "step 2";
     $tmp=$step->fetch(PDO::FETCH_ASSOC);
+    echo "step 3";
     array_push($result2,$tmp);
   echo "i made it here";
     if($tmp){
