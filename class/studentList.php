@@ -64,7 +64,7 @@ $classID=$_SESSION['classID'];
 $className=$_SESSION['className'];
 $classCode=$_SESSION['classCode'];
 // get student id who is in the class, and their name and email
-
+echo "$classID";
 $u = "SELECT studentID FROM enrolled WHERE classID = '".$classID."'";
 //$result=mysqli_query($conn,$u);
 $result=$conn->query($u);
@@ -75,6 +75,7 @@ $result2=[];
 //foreach($result as $studentID){
 foreach($result as $row){
   $studentID=$row['studentID'];
+  echo "$studentID";
     $a = "SELECT personname,email FROM logininfo WHERE personID = '".$studentID."'";
     //$tmp=mysqli_fetch_assoc(mysqli_query($conn,$a));
     $step=$conn->query($a);
