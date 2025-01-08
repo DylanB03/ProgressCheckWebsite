@@ -53,8 +53,8 @@ error_log("Password 2 = ", $txtpass2);
 if($txtpass != $txtpass2){
     //mysqli_close($conn);
     $conn = null;
-   //header("Location: ../login/createAccountWrongPass.php");
-   header("Location: ../index.php");
+   header("Location: ../login/createAccountWrongPass.php");
+  // header("Location: ../index.php");
     die();
 }
 
@@ -69,14 +69,15 @@ echo "inserted";
 $sql2= "SELECT email FROM loginInfo 
 WHERE email='".$_POST['email']."'";
 //$result2=mysqli_query($conn,$sql2);
+$result2 = $conn->query($sql2);
 
 echo "selected";
 error_log("number 2");
 
 //if(mysqli_num_rows($result2)==0){
-if($conn->query($sql2) == 0){
+if($result2->rowCount()==0){
 //$result=mysqli_query($conn,$sql);
-$result = $conn->query($sql);
+$conn->exec($sql);
 echo "queried";
 //mysqli_close($conn);
 $conn=null;
@@ -86,7 +87,7 @@ die();
     echo "second else";
    // mysqli_close($conn);
    $conn=null;
-    //header("Location: ../login/createAccountWrongPass.php");
+    header("Location: ../login/createAccountWrongPass.php");
     die();  
 }
 
