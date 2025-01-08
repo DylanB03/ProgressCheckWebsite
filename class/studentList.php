@@ -64,7 +64,6 @@ $classID=$_SESSION['classID'];
 $className=$_SESSION['className'];
 $classCode=$_SESSION['classCode'];
 // get student id who is in the class, and their name and email
-echo "$classID";
 $u = "SELECT studentID FROM enrolled WHERE classID = '".$classID."'";
 //$result=mysqli_query($conn,$u);
 $result=$conn->query($u);
@@ -72,15 +71,20 @@ $result=$conn->query($u);
 $result=$result->fetchAll(PDO::FETCH_ASSOC);
 $result2=[];
 
+if(empty($result)){
+  echo "result is empty ";
+}
 //foreach($result as $studentID){
 foreach($result as $row){
   $studentID=$row['studentID'];
-  echo "$studentID";
+  echo "current student ID = $studentID";
     $a = "SELECT personname,email FROM logininfo WHERE personID = '".$studentID."'";
     //$tmp=mysqli_fetch_assoc(mysqli_query($conn,$a));
     $step=$conn->query($a);
     $tmp=$step->fetch(PDO::FETCH_ASSOC);
     array_push($result2,$tmp);
+
+    echo "tmp is "+print_r($tmp,true);
 }
 
 ?>
