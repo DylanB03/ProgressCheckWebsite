@@ -1,9 +1,12 @@
-Made by: Dylan Butz
+Made by: 
+
+Dylan Butz
+
 Client: Ms.Lett
 
 OVERVIEW:
 
-This webapplication is designed for teachers and educators to have the ability to check in on their students, and how they are doing with the course content.
+This web application is designed for teachers and educators to have the ability to check in on their students, and how they are doing with the course content.
 
 LANGUAGES AND TOOLS USED:
 
