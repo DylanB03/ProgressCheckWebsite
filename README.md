@@ -47,7 +47,7 @@ Walkthrough:
 10. Clicking on an assignment that you are not the admin of (student), will show only the posted assignments.
 
 ![image](https://github.com/user-attachments/assets/d124bcec-5cbe-4cae-88aa-d64d5a65fd2c)
-11. Clicking on assignment reveals the assignment descriotion, a selectable colour to submit (based on how they are doing with the assignment/subject), and additional comments if needed as well.
+11. Clicking on an assignment reveals the assignment description, a selectable colour to submit (based on how they are doing with the assignment/subject), and additional comments to submite if needed as well.
 
 ![image](https://github.com/user-attachments/assets/54d48e87-f9d0-4547-a246-76f974153d2c)
 12. Finally, users can logout of their accounts.
