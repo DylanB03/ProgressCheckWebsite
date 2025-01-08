@@ -121,6 +121,9 @@ $tmp=$sql2->fetch(PDO::FETCH_ASSOC);
     $name = $class['className'];
     $classNum = $class['classID'];
     $classCode=$class['classCode'];
+    echo "$name";
+    echo "$classNum";
+    echo "$classCode";
 ?>
 <button onclick="location.href='../class/classPageRedirectButton.php?className=<?php echo $name?>&classID=<?php echo $classNum?>&classCode=<?php echo$classCode?>';"
 id="classListButton"
