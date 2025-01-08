@@ -13,8 +13,6 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
 // $username= "ywitupqynh";
 // $password = "accessProgress123!";
 // $dbname = "logindb";
-
-
 // $conn=mysqli_init();
 // if(!$conn) {
 //     die("mysqli_init failure");
