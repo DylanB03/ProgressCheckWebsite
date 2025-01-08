@@ -71,7 +71,7 @@ $result=$conn->query($u);
 $result=$result->fetchAll(PDO::FETCH_ASSOC);
 $result2=[];
 
-echo "result is : "+print_r($result,true);
+echo "result is : ".print_r($result,true);
 
 //foreach($result as $studentID){
 foreach($result as $row){
@@ -84,7 +84,7 @@ foreach($result as $row){
     array_push($result2,$tmp);
 
     if($tmp){
-    echo "tmp is "+print_r($tmp,true);
+    echo "tmp is ".print_r($tmp,true);
     }else{
       echo "doesnt exist";
     }
