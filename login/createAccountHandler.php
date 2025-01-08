@@ -36,6 +36,7 @@ $conn = new PDO("mysql:host=$servername;port=80;dbname=$dbname",$username,$passw
 } catch (PDOException $e){
     die("Failed to connect to database: ". $e->getMessage());
 }
+echo "connected";
 
 // get variables from the createAccount form
 
@@ -52,19 +53,24 @@ if($txtpass !== $txtpass2){
     die();
 }
 
+echo "checked if passwords matched";
 
 
 $sql = "INSERT INTO loginInfo (personname,email,passcode) VALUES ('$txtname','$txtemail','$txtpass')";
+
+echo "inserted";
 
 // if email already exists, send back to create account handler, else, create account
 $sql2= "SELECT email FROM loginInfo 
 WHERE email='".$_POST['email']."'";
 //$result2=mysqli_query($conn,$sql2);
 
+echo "selected";
 //if(mysqli_num_rows($result2)==0){
 if($conn->query($sql2) == 0){
 //$result=mysqli_query($conn,$sql);
 $result = $conn->query($sql);
+echo "queried";
 //mysqli_close($conn);
 $conn=null;
 header("Location:../login/createSuccessful.php");
