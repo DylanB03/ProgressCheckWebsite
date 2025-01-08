@@ -1,7 +1,7 @@
 <?php
 session_start();
 // if appropriate session variables arent set, send the user back to the home page
-if(!isset($_SESSION['userID']) || !isset($_SESSION['classID'])){
+if(!isset($_SESSION['userID'])){
     header("Location:../index.php");
     die();
   }
