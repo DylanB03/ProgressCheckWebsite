@@ -113,9 +113,9 @@ $tmp=$sql2->fetch(PDO::FETCH_ASSOC);
 */
 foreach($result as $row){
   $classID=$row['classID'];
-  echo "$classID";
+  //echo "$classID";
   $a = "SELECT className,classID,classCode FROM classrooms
-  WHERE classID='".$classID[0]."'";
+  WHERE classID='".$classID."'";
   $sql2=$conn->query($a);
   $tmp=$sql2->fetch(PDO::FETCH_ASSOC);
   array_push($result2,$tmp);
