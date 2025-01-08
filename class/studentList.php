@@ -71,9 +71,8 @@ $result=$conn->query($u);
 $result=$result->fetchAll(PDO::FETCH_ASSOC);
 $result2=[];
 
-if(empty($result)){
-  echo "result is empty ";
-}
+echo "result is : "+print_r($result,true);
+
 //foreach($result as $studentID){
 foreach($result as $row){
   $studentID=$row['studentID'];
@@ -84,7 +83,11 @@ foreach($result as $row){
     $tmp=$step->fetch(PDO::FETCH_ASSOC);
     array_push($result2,$tmp);
 
+    if($tmp){
     echo "tmp is "+print_r($tmp,true);
+    }else{
+      echo "doesnt exist";
+    }
 }
 
 ?>
