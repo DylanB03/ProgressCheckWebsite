@@ -316,3 +316,11 @@ table{table-layout: fixed;}
     margin-top:70px;
     margin-left:13px;
 }
+
+body{
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}

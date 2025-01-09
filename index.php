@@ -59,7 +59,9 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
     <div class="title" style  = "font-size: 60px">
 
       <strong>Progress Check Website</strong>
+    background = "background.jpg";
 
     </div>
+
 </body>
 </html>
