@@ -33,7 +33,7 @@ $classCode=$_SESSION['classCode'];
     <meta charset = "utf-8">
     <title>Progress Check Website</title>
     <link rel ="icon" href="../img/logo.png"/>
-    <link rel ="stylesheet" href="css/styles.css">
+    <link rel ="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="ht../tps://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
