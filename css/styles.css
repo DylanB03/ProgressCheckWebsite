@@ -317,8 +317,8 @@ table{table-layout: fixed;}
     margin-left:13px;
 }
 
-body{
-    background-image: url(../img/background.jpg);
+body {
+    background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
