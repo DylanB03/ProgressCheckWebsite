@@ -49,7 +49,7 @@ $classCode=$_SESSION['classCode'];
         
         <div class ="stuff">
            <!-- nav bar, hyper links to other pages. color and text decoration removes the default blue underline for hlinks  -->
-            <a href="../home.php"style="color: black; text-decoration:none">Home</a>
+            <a href="../index.php"style="color: black; text-decoration:none">Home</a>
             <a href="../class/dashboard.php"style="color: black; text-decoration:none" id="dash">Dashboard</a>
             <a href="../login/logoutPage.php"style="color: black; text-decoration:none"id="lO">Log Out</a>
         </div>
