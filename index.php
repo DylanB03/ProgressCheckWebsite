@@ -31,6 +31,7 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
     <!-- default make stuff -->
     <meta charset = "utf-8">
     <title>Progress Check Website</title>
+    <link rel ="icon" href="img/logo.png"/>
     <link rel ="stylesheet" href="css/styles.css">
 </head> 
 
