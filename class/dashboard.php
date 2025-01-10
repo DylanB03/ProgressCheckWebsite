@@ -42,7 +42,8 @@ if(!isset($_SESSION['userID'])){
       </div>
      </div>
 
-<div class = "content"
+<div class = "content">
+
   <div class = "myDashboard">
     <b>My Dashboard</b>
 
