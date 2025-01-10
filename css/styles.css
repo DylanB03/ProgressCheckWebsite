@@ -371,6 +371,7 @@ table{table-layout: fixed;}
     border-radius:25;
     position:relative;
     margin-top:7%;
+    border:black 1px;
 }
 
 .taskDescription{
