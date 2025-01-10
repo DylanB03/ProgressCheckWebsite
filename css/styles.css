@@ -347,9 +347,9 @@ details:nth-child(2){transition-delay: 400ms;}
 details:nth-child(3){transition-delay: 600ms;}
 details:nth-child(4){transition-delay: 800ms;}
 details:nth-child(5){transition-delay: 1000ms;}
-details:nth-child(6){transition-delay: 1200ms;}
+/* details:nth-child(6){transition-delay: 1200ms;}
 details:nth-child(7){transition-delay: 1400ms;}
-details:nth-child(8){transition-delay: 1600ms;}
+details:nth-child(8){transition-delay: 1600ms;} */
 
 
 input{
