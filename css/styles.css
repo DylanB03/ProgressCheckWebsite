@@ -324,6 +324,18 @@ table{table-layout: fixed;}
     margin-left:13px;
 }
 
+body > * {
+    position:relative;
+    transform: translateY(-100%);
+    opacity:0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+body.falling{
+transform: translateY(0);
+opacity: 1;
+}
+
 body {
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
