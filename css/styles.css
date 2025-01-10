@@ -20,6 +20,52 @@
 }
 
 
+/* centre text in middle of screen */
+.title{
+    /* background-color: black; */
+    /* color: white; */
+    /* margin: auto; */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    /* padding-top: 10px; */
+    /* padding-bottom: 15px; */
+    /* height: 80px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;   
+    transition: transform 0.3s ease;
+    /* border-radius: 10px;  */
+}
+
+.title:hover{
+    transform: translate(-50%, -50%) scale(1.1);
+    transform-origin: center;
+    /* top:50%; */
+    /* left:50% */
+}
+
+.titleCreate{
+    background-color: black;
+    color: white;
+    margin: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    /* height: 80px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right:0%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;   
+    border-radius: 10px; 
+}
+
 .logout{
     background-color: black;
     color: white;
@@ -322,53 +368,18 @@ input{
     font-weight: 400;
     font-style: normal;
   }
-  
-  
 
-/* centre text in middle of screen */
-.title{
-    /* background-color: black; */
-    /* color: white; */
-    /* margin: auto; */
-    /* padding-left: 20px; */
-    /* padding-right: 20px; */
-    /* padding-top: 10px; */
-    /* padding-bottom: 15px; */
-    /* height: 80px; */
-    font-family: 'Raleway', serif;
+  .description{
+    font-family: "Raleway",sans-serif;
     font-weight: 100;
+    font-style: italic;
+    font-size: 40px;
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;   
-    transition: transform 0.3s ease;
-    /* border-radius: 10px;  */
-}
-
-.title:hover{
-    transform: translate(-50%, -50%) scale(1.1);
-    transform-origin: center;
-    /* top:50%; */
-    /* left:50% */
-}
-
-.titleCreate{
-    background-color: black;
-    color: white;
-    margin: auto;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 5px;
-    padding-bottom: 15px;
-    /* height: 80px; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    right:0%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;   
-    border-radius: 10px; 
-}
+    text-align: center; 
+  }
+  
+  

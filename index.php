@@ -71,6 +71,10 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
       <strong>Progress Check</strong>
 
     </div>
+    
+    <div class = "description">
+              A Tool for Educators to See the Level of Understanding of Their Students
+    </div>
 
 </body>
 </html>
