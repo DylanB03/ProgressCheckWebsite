@@ -56,7 +56,7 @@ $classCode=$_SESSION['classCode'];
 </div>
 
 <!-- form to accept assignment create -->
-     <div class = "enterInfo" style="margin-top:7%;">
+     <div class = "enterInfo" style="margin-top:15%;">
 <!-- collect user input -->
     <form class = "createAssignmentInput" action="../class/createAssignmentHandler.php" id = "createForm" method ="post">
 
