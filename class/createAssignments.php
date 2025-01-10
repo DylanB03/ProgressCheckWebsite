@@ -47,7 +47,7 @@ $classCode=$_SESSION['classCode'];
 </div>
      </div>
 <!-- big text + home button -->
-     <div class = "myDashboard">
+     <div class = "enterInfo">
         <b>Create Assignment</b>
 </div>
 <div class = "homeButton">
