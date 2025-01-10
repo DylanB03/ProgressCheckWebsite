@@ -2,6 +2,14 @@
     float: left;
 }
 
+.myDashboard{
+    /* color: solid black; */
+    font-size: 90px;
+    float: left;
+    margin-top: 70px;
+    margin-left: 10px;
+    
+}
 
 .nav-bar{
     /* background-color: #f2c855;
@@ -406,11 +414,4 @@ input{
     text-align: center; 
   }
   
-  .myDashboard{
-    /* color: solid black; */
-    font-size: 90px;
-    float: left;
-    margin-top: 70px;
-    margin-left: 10px;
-    
-}
+  
