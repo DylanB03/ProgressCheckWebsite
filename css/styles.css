@@ -13,17 +13,17 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 15px 0;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
 .nav-container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px
 }
 
 /* space text space evenely horizontally + center vertically */
@@ -33,22 +33,21 @@
    top: 50%;
    transform: translateY(88%); */
    display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 .stuff a{
-    color: #333;
+    color: #333333;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.05em;
     transition: color 0.2s ease;
 }
 
 .stuff a:hover {
-    color: #666;
+    color: #666666;
 }
-
 /* centre text in middle of screen */
 .title{
     /* background-color: black; */
