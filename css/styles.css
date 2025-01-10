@@ -379,6 +379,10 @@ details:nth-child(5){transition-delay: 1000ms;}
 details:nth-child(7){transition-delay: 1400ms;}
 details:nth-child(8){transition-delay: 1600ms;} */
 
+.content{
+    margin-top: 40px;
+    padding: 20px;
+}
 
 input{
     border-radius: 10px;
