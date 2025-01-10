@@ -45,6 +45,7 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
 
 
     <div class="nav-bar" style="font-size: 30px">
+      <div class = "nav-container">
             
       <img src="img/logo.png" 
         width = "100"
@@ -63,6 +64,7 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
             <a href="login/loginPage.php"style="color: black; text-decoration:none"id="lP">Sign In</a><?php endif;?>
             <a href="login/logoutPage.php"style="color: black; text-decoration:none"id="lO">Log Out</a>
         </div>
+      </div>
      </div>
 
    
