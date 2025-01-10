@@ -42,6 +42,7 @@ if(!isset($_SESSION['userID'])){
 </div>
      </div>
 
+     <div class = "content"
 <div class = "myDashboard">
   <b>My Dashboard</b>
 
@@ -144,4 +145,5 @@ foreach($result as $row){
 id="classListButton"
 class="item-list block"><?php echo $name?></button>
 <?php } ?>
-</div>  
+<div>
+</div> 
