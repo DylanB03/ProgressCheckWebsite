@@ -45,6 +45,7 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
                   </div>
            </div>
       
+<div class = "content">
 <div class = "header">
 <b>Please Enter Your Information</b>
 </div>
@@ -70,4 +71,5 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
 }
 ?>
 </form>
+</div>
 </html>

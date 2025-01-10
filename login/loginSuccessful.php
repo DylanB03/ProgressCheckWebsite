@@ -40,6 +40,8 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
                   </div>
            </div>
 
+<div class = "content">
 <div class = "title" style = "font-size: 60px">
 <strong>Logged In Successfuly</strong>
+</div>
 </html>

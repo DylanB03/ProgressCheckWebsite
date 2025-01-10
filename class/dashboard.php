@@ -39,14 +39,14 @@ if(!isset($_SESSION['userID'])){
             <a href="../class/dashboard.php"style="color: black; text-decoration:none" id="dash">Dashboard</a>
             <a href="../login/logoutPage.php"style="color: black; text-decoration:none"id="lO">Log Out</a>
         </div>
-</div>
+      </div>
      </div>
 
-     <div class = "content"
-<div class = "myDashboard">
-  <b>My Dashboard</b>
+<div class = "content"
+  <div class = "myDashboard">
+    <b>My Dashboard</b>
 
-</div>
+  </div>
 
 <!-- two buttons -->
 
