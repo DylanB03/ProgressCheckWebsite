@@ -57,7 +57,6 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
     <input class = "w3-cyan w3-hover-light-green w3-border-0 text-field" type="submit" value="Sign in">
 </div>
 </div>
-</body>
 
 <?php
  if(isset($_SESSION["error"])){
@@ -66,4 +65,6 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
 }
 ?>
 </form>
+</body>
+
 </html>
