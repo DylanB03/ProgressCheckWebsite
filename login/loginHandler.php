@@ -46,7 +46,7 @@ $row=$result->fetch(PDO::FETCH_ASSOC);
         $_SESSION["userID"] = $row['personID'];
         $_SESSION["userName"]=$row['personname'];
         $_SESSION["userEmail"]=$_POST['email'];
-        header('Location: ../login/loginSuccessful.php');
+        header('Location: ../class/dashboard.php');
         die();
     }
     else{
