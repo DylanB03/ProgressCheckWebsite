@@ -22,13 +22,13 @@
 
 /* centre text in middle of screen */
 .title{
-    background-color: black;
-    color: white;
-    margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 15px;
+    /* background-color: black; */
+    /* color: white; */
+    /* margin: auto; */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    /* padding-top: 10px; */
+    /* padding-bottom: 15px; */
     /* height: 80px; */
     position: absolute;
     top: 50%;
@@ -36,7 +36,7 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;   
-    border-radius: 10px; 
+    /* border-radius: 10px;  */
 }
 
 .title:hover{
