@@ -18,13 +18,14 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
 <div class="nav-bar" style="font-size: 30px">
+    <div class = "nav-container">
             
             <img src="../img/logo.png" 
-              width = "100"
-              height = "100"
+              width = "40"
+              height = "40"
               alt = "logo"
               id="logo"
-              style="border-right: 3px solid black">
+              style="border: 1px solid black">
               
               <div class ="stuff">
                  <!-- nav bar, hyper links to other pages. color and text decoration removes the default blue underline for hlinks  -->
@@ -36,6 +37,7 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
                   <a href="../login/loginPage.php"style="color: black; text-decoration:none">Sign In</a><?php endif;?>
                   <a href="../login/logoutPage.php"style="color: black; text-decoration:none">Log Out</a>
               </div>
+                  </div>
            </div>
 
 <div class = "titleCreate" style="font-size:60px">

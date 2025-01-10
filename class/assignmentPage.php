@@ -47,14 +47,16 @@ $_SESSION['taskID']=$taskID;
 
 <body>
 
-    <div class="nav-bar" style="font-size: 30px">
+   
+<div class="nav-bar" style="font-size: 30px">
+      <div class = "nav-container">
             
       <img src="../img/logo.png" 
-        width = "100"
-        height = "100"
+        width = "40"
+        height = "40"
         alt = "logo"  
         id="logo"
-        style="border-right: 3px solid black">
+        style="border: 1px solid black">
         
         <div class ="stuff">
            <!-- nav bar, hyper links to other pages. color and text decoration removes the default blue underline for hlinks  -->
@@ -62,6 +64,7 @@ $_SESSION['taskID']=$taskID;
             <a href="../class/dashboard.php"style="color: black; text-decoration:none" id="dash">Dashboard</a>
             <a href="../login/logoutPage.php"style="color: black; text-decoration:none"id="lO">Log Out</a>
         </div>
+</div>
      </div>
     
 <!-- big text -->
