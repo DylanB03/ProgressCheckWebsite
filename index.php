@@ -52,7 +52,7 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
         height = "40"
         alt = "logo"  
         id="logo"
-        style="border-right: 3px solid black">
+        style="border: 1px solid black">
         
         <div class ="stuff">
            <!-- nav bar, hyper links to other pages. color and text decoration removes the default blue underline for hlinks  -->
