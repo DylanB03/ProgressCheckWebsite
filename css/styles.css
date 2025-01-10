@@ -369,6 +369,8 @@ table{table-layout: fixed;}
     height:50;
     width:50;
     border-radius:25;
+    position:relative;
+    margin-top:45%;
 }
 
 .taskDescription{
