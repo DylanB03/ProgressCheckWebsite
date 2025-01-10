@@ -38,7 +38,7 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
               </div>
            </div>
 
-           <div class = "logout" style = "font-size: 60px">
+           <div class = "title" style = "font-size: 40px">
             <strong><a href="../login/logoutHandler.php" style="color:white; text-decoration:none">Logout</a></strong>
             </div>
       
