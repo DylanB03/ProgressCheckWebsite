@@ -331,18 +331,13 @@ body {
     background-attachment: fixed;
     background-size: cover;
     font-family: 'Nanum Gothic', sans-serif;
-}
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 
-body > * {
-    position:relative;
-    transform: translateY(-100%);
-    opacity:0;
-    transition: transform 0.6s ease, opacity 0.6s ease;
-}
-
-body.falling > *{
-transform: translateY(0);
-opacity: 1;
+    @starting-style {
+        opacity:0;
+    }
 }
 
 

@@ -38,7 +38,7 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head> 
 
-<body onload="triggerFall()">
+<body>
 
 
     <div class="nav-bar" style="font-size: 30px">
@@ -67,12 +67,6 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
       <strong>Progress Check</strong>
 
     </div>
-    <script>
-  function triggerFall() {
-            // Add the 'falling' class to the body element
-            document.body.classList.add('falling');
-        }
-    </script>
 
 </body>
 </html>
