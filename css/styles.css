@@ -5,10 +5,13 @@
 .myDashboard{
     /* color: solid black; */
     font-size: 30px;
-    float: left;
+    /* float: left; */
     /* margin-top: -10px; */
-    margin-left: 10px;
+    /* margin-left: 10px; */
     /* margin-bottom: 20px; */
+    position: absolute;
+    top: 30px; /* Position just below the nav bar */
+    left: 10px;
     
 }
 
