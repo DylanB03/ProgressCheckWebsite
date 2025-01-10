@@ -337,7 +337,7 @@ body {
 
     @starting-style {
         opacity:0;
-        translate:-30rem;
+        /* translate:-30rem; */
         /* scale:1.5; */
     }
 }
