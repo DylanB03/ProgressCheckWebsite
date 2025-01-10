@@ -332,7 +332,7 @@ body {
     background-size: cover;
     font-family: 'Nanum Gothic', sans-serif;
     transition-property: opacity,translate,scale;
-    transition-duration: 1.5s;
+    transition-duration: 1s;
     transition-timing-function: ease-in-out;
 
     @starting-style {

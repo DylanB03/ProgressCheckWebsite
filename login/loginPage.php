@@ -22,6 +22,7 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
+<body>
 <div class="nav-bar" style="font-size: 30px">
             
             <img src="../img/logo.png" 
@@ -56,6 +57,7 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
     <input class = "w3-cyan w3-hover-light-green w3-border-0 text-field" type="submit" value="Sign in">
 </div>
 </div>
+</body>
 
 <?php
  if(isset($_SESSION["error"])){
