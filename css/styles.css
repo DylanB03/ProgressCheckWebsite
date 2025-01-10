@@ -147,14 +147,6 @@ input{
 }
 
 
-.myDashboard{
-    /* color: solid black; */
-    font-size: 90px !important;
-    float: left;
-    margin-top: 70px;
-    margin-left: 10px;
-    
-}
 
 /* for dashboard class list */
 .container-box {
@@ -414,4 +406,11 @@ input{
     text-align: center; 
   }
   
-  
+  .myDashboard{
+    /* color: solid black; */
+    font-size: 90px;
+    float: left;
+    margin-top: 70px;
+    margin-left: 10px;
+    
+}

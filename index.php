@@ -75,7 +75,7 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
     </div>
     
     <div class = "description">
-              A Tool for Educators to See the Level of Understanding of Their Students
+              A Tool for Educators to Evaluate the Level of Understanding of Their Students
     </div>
             </div>
 </body>
