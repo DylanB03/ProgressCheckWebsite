@@ -149,7 +149,7 @@ input{
 
 .myDashboard{
     /* color: solid black; */
-    font-size: 90px;
+    font-size: 90px !important;
     float: left;
     margin-top: 70px;
     margin-left: 10px;
