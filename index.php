@@ -60,7 +60,7 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
         </div>
      </div>
 
-    <div class="title" style  = "font-size: 100px">
+    <div class="title" style  = "font-size: 80px">
 
       <strong>Progress Check</strong>
 
