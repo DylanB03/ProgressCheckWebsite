@@ -46,8 +46,8 @@ $txtpass = $_POST['passcode'];
 $txtpass2 = $_POST['passcode2'];
 
 
-error_log("Password 1 = ", $txtpass);
-error_log("Password 2 = ", $txtpass2);
+// error_log("Password 1 = ", $txtpass);
+// error_log("Password 2 = ", $txtpass2);
 
 echo "before";
 
