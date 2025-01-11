@@ -49,6 +49,8 @@ $txtpass2 = $_POST['passcode2'];
 error_log("Password 1 = ", $txtpass);
 error_log("Password 2 = ", $txtpass2);
 
+echo "before";
+
 // check if passcode1 == passcode2
 if($txtpass != $txtpass2){
     echo "here";
