@@ -51,8 +51,10 @@ error_log("Password 2 = ", $txtpass2);
 
 // check if passcode1 == passcode2
 if($txtpass != $txtpass2){
+    echo "here";
     //mysqli_close($conn);
     $conn = null;
+    echo "2";
    header("Location: ../login/createAccountWrongPass.php");
   // header("Location: ../index.php");
     die();
