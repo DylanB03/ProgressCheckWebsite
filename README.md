@@ -31,25 +31,25 @@ Walkthrough:
 ![image](https://github.com/user-attachments/assets/8150de4b-cc6b-4124-9aff-b330cb1d9f5e)
 5. Creating a classroom requires only a classname, which will then autogenerate a unique and permanent join code for other accounts to become students within your class. The creator of the classroom has specific admin privileges.
 
-![image](https://github.com/user-attachments/assets/afdbe142-a4a5-499d-a4c2-b46c0b9f28f7)
+![image](https://github.com/user-attachments/assets/2fa9e700-bd4d-4a98-8a8b-1c8ddb7c4d86)
 6. Clicking on a classroom box on your dashboard will show this screen if you are the administrator. The code is the join code others will use to join your classroom.
 
-![image](https://github.com/user-attachments/assets/8b894fb2-896f-45d8-b152-2df1a28ccc91)
+![image](https://github.com/user-attachments/assets/a838da78-0524-46c9-8ab1-b408d57bd9e2)
 7. Teachers can either create an assignment with a description, view a list of all created assignments and their descriptions (sortable alphabetically and reserve alphabetically), or view the list of students in their class (sortable as well). Teachers can return back to their specific classroom by clicking the home button.
 
-![image](https://github.com/user-attachments/assets/e19d67e9-5520-4e46-ac0c-bfb1149aba60)
+![image](https://github.com/user-attachments/assets/9de1294d-0365-4d19-ae46-a74bd12240e7)
 8. Teachers can click on their assignments to enter them and see students responses as to how they are doing.
 
-![image](https://github.com/user-attachments/assets/1761668e-931e-4cb6-8c71-35c40b31f728)
+![image](https://github.com/user-attachments/assets/c414c2cb-cc6d-415b-8746-c5e0647bddb4)
 9. In this way, educators can more subtly check on their students without singling them out, increasing the likelihood of a student reaching out for help.
 
-![image](https://github.com/user-attachments/assets/55709c35-1641-49b0-a9fb-c514c39f03c8)
+![image](https://github.com/user-attachments/assets/c7b17f1a-d904-4612-a4d4-2b5855939915)
 10. Clicking on an assignment that you are not the admin of (student), will show only the posted assignments.
 
-![image](https://github.com/user-attachments/assets/d124bcec-5cbe-4cae-88aa-d64d5a65fd2c)
+![image](https://github.com/user-attachments/assets/0b96d2e9-412b-489c-aa9f-fea8af46f1f9)
 11. Clicking on an assignment reveals the assignment description, a selectable colour to submit (based on how they are doing with the assignment/subject), and additional comments to submite if needed as well.
 
-![image](https://github.com/user-attachments/assets/54d48e87-f9d0-4547-a246-76f974153d2c)
+![image](https://github.com/user-attachments/assets/419526c2-d26e-4734-a4e2-6d920a5fc423)
 12. Finally, users can logout of their accounts.
 
 
