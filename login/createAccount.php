@@ -55,7 +55,7 @@ if(isset($_SESSION['userID']) && isset($_SESSION['userName']) && isset($_SESSION
     <form class = "loginInput" action="createAccountHandler.php" id = "createForm" method ="post">
 
         <input class = "text-field" type="text" id ="personname" name = "personname" placeholder="Name" required>
-        <input class = "text-field" type="text" id = "email" name="email" placeholder="Email" required>
+        <input class = "text-field" type="email" id = "email" name="email" placeholder="Email" required>
         <input class = "text-field" type="password" id="passcode" name = "passcode" placeholder="Password" required>
         <input class = "text-field" type="password" id="passcode2" name ="passcode2" placeholder = "Verify Password" required>
         <input class = "button" type="submit" value="Create Account">
