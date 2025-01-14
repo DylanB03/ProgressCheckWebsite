@@ -28,7 +28,7 @@ Walkthrough:
 ![image](https://github.com/user-attachments/assets/959ea6a5-abcd-4671-96d6-e6c4786f0c52)
 4. After signing in, a dashboard option will appear on the navigation bar, and the create account option will dissapear. Users will see their classrooms they have joined (empty if account is brand new), and will have options to create or join a classroom as well.
 
-![image](https://github.com/user-attachments/assets/2d40042e-4ca6-45ab-835c-78ea0094166c)
+![image](https://github.com/user-attachments/assets/8150de4b-cc6b-4124-9aff-b330cb1d9f5e)
 5. Creating a classroom requires only a classname, which will then autogenerate a unique and permanent join code for other accounts to become students within your class. The creator of the classroom has specific admin privileges.
 
 ![image](https://github.com/user-attachments/assets/afdbe142-a4a5-499d-a4c2-b46c0b9f28f7)
