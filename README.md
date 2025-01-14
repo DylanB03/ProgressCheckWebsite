@@ -16,16 +16,16 @@ LAMP Stack
 
 Walkthrough:
 
-![image](https://github.com/user-attachments/assets/c080f460-c361-4e52-8813-84c34072c5b6)
+![image](https://github.com/user-attachments/assets/d7934fe4-689e-4fea-8691-ac3783ae9203)
 1. Users can create an account, sign in using a previous account, or logout if they are currently signed in using the navigation bar at the top of the page.
 
-![image](https://github.com/user-attachments/assets/30afbeb9-f94c-4fd8-9332-cf934aeb7c90)
+![image](https://github.com/user-attachments/assets/8e690f1e-8e2a-4202-b21c-fe0acad28b88)
 2. Creating an account prompts the user to enter their name, email, and password, requiring a verified matching password for quality of life purposes.
 
-![image](https://github.com/user-attachments/assets/d251b7cf-e488-46c7-957d-f6f8659089b2)
+![image](https://github.com/user-attachments/assets/123adcfd-19f2-4574-81f1-c3b761e1c003)
 3. Signing in requires only the email and password used for account creation
 
-![image](https://github.com/user-attachments/assets/38170538-bca0-4c61-b274-79ea7f4f34cf)
+![image](https://github.com/user-attachments/assets/959ea6a5-abcd-4671-96d6-e6c4786f0c52)
 4. After signing in, a dashboard option will appear on the navigation bar, and the create account option will dissapear. Users will see their classrooms they have joined (empty if account is brand new), and will have options to create or join a classroom as well.
 
 ![image](https://github.com/user-attachments/assets/2d40042e-4ca6-45ab-835c-78ea0094166c)
